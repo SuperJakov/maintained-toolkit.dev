@@ -12,6 +12,9 @@ interface UseModelSelectProps {
 export const useModelSelect = ({
   setSelectedChatModel,
 }: UseModelSelectProps) => {
+  const availableProviders = useMemo(() => {
+    return Array.from(new Set(allLanguageModels.map((model) => model.provider)));
+  }, []);
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCapabilities, setSelectedCapabilities] = useState<
@@ -82,15 +85,17 @@ export const useModelSelect = ({
   };
 
   const toggleProvider = (provider: string) => {
-    setSelectedProviders((prev) =>
-      prev.includes(provider)
-        ? prev.filter((p) => p !== provider)
-        : [...prev, provider],
-    );
+    setSelectedProviders((prev) => {
+      if (prev.includes(provider)) {
+        return [];
+      }
+      return [provider];
+    });
   };
 
   return {
     models: filteredModels,
+    availableProviders,
     isOpen,
     setIsOpen,
     searchQuery,

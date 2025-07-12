@@ -20,7 +20,7 @@ const llamaModelData: Omit<LanguageModel, "provider">[] = [
 
   {
     name: "Llama 4 Maverick",
-    modelId: "meta-llama/llama-4-maverick",
+    modelId: "llama-4-maverick",
     description:
       "Llama 4 Maverick 17B is an experimental instruction-tuned model with enhanced capabilities",
     capabilities: [LanguageModelCapability.ToolCalling],

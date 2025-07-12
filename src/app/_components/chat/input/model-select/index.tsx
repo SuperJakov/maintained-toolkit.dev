@@ -41,12 +41,10 @@ export const ModelSelect: React.FC = () => {
     toggleCapability,
     toggleProvider,
     handleModelSelect,
+    availableProviders,
   } = useModelSelect({ selectedChatModel, setSelectedChatModel });
 
-  // Get unique providers from models
-  const availableProviders = Array.from(
-    new Set((models ?? []).map((model) => model.provider)),
-  );
+
 
   return (
     <>
@@ -109,11 +107,7 @@ export const ModelSelect: React.FC = () => {
                   {availableProviders.map((provider) => (
                     <Badge
                       key={provider}
-                      variant={
-                        selectedProviders.includes(provider)
-                          ? "default"
-                          : "outline"
-                      }
+                      variant={selectedProviders.includes(provider) ? "default" : "outline"}
                       className="cursor-pointer gap-1 px-1.5 py-0.5"
                       onClick={() => toggleProvider(provider)}
                     >
@@ -136,11 +130,7 @@ export const ModelSelect: React.FC = () => {
                     return (
                       <Badge
                         key={capability}
-                        variant={
-                          selectedCapabilities.includes(capability)
-                            ? "default"
-                            : "outline"
-                        }
+                        variant={selectedCapabilities.includes(capability) ? "default" : "outline"}
                         className="cursor-pointer gap-1 px-1.5 py-0.5"
                         onClick={() => toggleCapability(capability)}
                       >
@@ -153,7 +143,7 @@ export const ModelSelect: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className="max-h-32 w-full max-w-full overflow-x-hidden overflow-y-auto md:max-h-48">
+          <div className="h-32 w-full max-w-full overflow-x-hidden overflow-y-auto md:h-48">
             {models?.map((model) => (
               <DropdownMenuItem
                 key={model.modelId}

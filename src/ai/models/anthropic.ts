@@ -1,20 +1,6 @@
 import { LanguageModelCapability, type LanguageModel } from "@/ai/types";
 
-const anthropicModelData: Omit<LanguageModel, "provider">[] = [
-  {
-    name: "Claude 3.7 Sonnet",
-    modelId: "claude-3.7-sonnet",
-    description: "Enhanced version with improved capabilities",
-    capabilities: [
-      LanguageModelCapability.Vision,
-      LanguageModelCapability.Reasoning,
-      LanguageModelCapability.Pdf,
-      LanguageModelCapability.ToolCalling,
-    ],
-    bestFor: ["Code review", "Content creation", "Problem solving"],
-    contextLength: 200000,
-  },
-  {
+const anthropicModelData: Omit<LanguageModel, "provider">[] = [{
     name: "Claude 4 Opus",
     modelId: "claude-opus-4",
     description: "Most powerful model for complex reasoning and creative tasks",
@@ -26,8 +12,7 @@ const anthropicModelData: Omit<LanguageModel, "provider">[] = [
     ],
     bestFor: ["Complex analysis", "Creative writing", "Research"],
     contextLength: 200000,
-  },
-  {
+  },{
     name: "Claude Sonnet 4",
     modelId: "claude-sonnet-4",
     description: "Balanced performance for most tasks with improved reasoning",
@@ -38,6 +23,19 @@ const anthropicModelData: Omit<LanguageModel, "provider">[] = [
       LanguageModelCapability.ToolCalling,
     ],
     bestFor: ["General purpose", "Code generation", "Analysis"],
+    contextLength: 200000,
+  },
+  {
+    name: "Claude 3.7 Sonnet",
+    modelId: "claude-3.7-sonnet",
+    description: "Enhanced version with improved capabilities",
+    capabilities: [
+      LanguageModelCapability.Vision,
+      LanguageModelCapability.Reasoning,
+      LanguageModelCapability.Pdf,
+      LanguageModelCapability.ToolCalling,
+    ],
+    bestFor: ["Code review", "Content creation", "Problem solving"],
     contextLength: 200000,
   },
   {
