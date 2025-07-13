@@ -2,6 +2,11 @@
 
 ![Banner Image](/banner.png)
 
+![TypeScript](https://img.shields.io/badge/TypeScript-%230074c1.svg?logo=typescript&logoColor=white)
+![Next.js](https://img.shields.io/badge/Next.js-000000?logo=nextdotjs&logoColor=white)
+![Prisma](https://img.shields.io/badge/Prisma-2D3748?logo=prisma&logoColor=white)
+![TailwindCSS](https://img.shields.io/badge/Tailwind-06b6d4?logo=tailwindcss&logoColor=white)
+
 > **About this fork**  
 > This repository is an actively-maintained fork of the original Toolkit.dev.  
 > Our goals:  
