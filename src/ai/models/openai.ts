@@ -82,17 +82,6 @@ const openAiLanguageModelsData: Omit<LanguageModel, "provider">[] = [
     contextLength: 128000,
   },
   {
-    name: "O3 Mini",
-    modelId: "o3-mini",
-    description: "Next-generation reasoning model",
-    capabilities: [
-      LanguageModelCapability.Reasoning,
-      LanguageModelCapability.ToolCalling,
-    ],
-    bestFor: ["Advanced reasoning", "Complex problems", "Research"],
-    contextLength: 200000,
-  },
-  {
     name: "O3",
     modelId: "o3",
     description: "Most advanced reasoning model",
@@ -106,19 +95,6 @@ const openAiLanguageModelsData: Omit<LanguageModel, "provider">[] = [
     contextLength: 200000,
   },
   {
-    name: "O1",
-    modelId: "o1",
-    description: "Advanced reasoning model for complex problems",
-    capabilities: [
-      LanguageModelCapability.Vision,
-      LanguageModelCapability.Reasoning,
-      LanguageModelCapability.ToolCalling,
-      LanguageModelCapability.Pdf,
-    ],
-    bestFor: ["Complex reasoning", "Math", "Science", "Research"],
-    contextLength: 200000,
-  },
-  {
     name: "O4 Mini",
     modelId: "o4-mini",
     description: "Latest generation reasoning model",
@@ -129,6 +105,19 @@ const openAiLanguageModelsData: Omit<LanguageModel, "provider">[] = [
       LanguageModelCapability.ToolCalling,
     ],
     bestFor: ["Advanced reasoning", "Complex tasks", "Research"],
+    contextLength: 200000,
+  },
+  {
+    name: "O1",
+    modelId: "o1",
+    description: "Advanced reasoning model for complex problems",
+    capabilities: [
+      LanguageModelCapability.Vision,
+      LanguageModelCapability.Reasoning,
+      LanguageModelCapability.ToolCalling,
+      LanguageModelCapability.Pdf,
+    ],
+    bestFor: ["Complex reasoning", "Math", "Science", "Research"],
     contextLength: 200000,
   },
 ];

@@ -10,6 +10,7 @@ import { perplexityModels } from "./perplexity";
 import { llamaModels } from "./llama";
 import { qwenModels } from "./qwen";
 import { deepseekModels } from "./deepseek";
+import { moonshotModels } from "./moonshot";
 
 export const languageModels: LanguageModel[] = [
   ...anthropicModels,
@@ -20,6 +21,7 @@ export const languageModels: LanguageModel[] = [
   ...llamaModels,
   ...qwenModels,
   ...deepseekModels,
+  ...moonshotModels,
 ];
 
 export const imageModels = [
