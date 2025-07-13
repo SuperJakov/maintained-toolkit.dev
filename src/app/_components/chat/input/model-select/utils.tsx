@@ -47,4 +47,5 @@ export const modelProviderNames: Record<string, string> = {
   "meta-llama": "Llama",
   qwen: "Qwen",
   deepseek: "DeepSeek",
+  moonshotai: "Moonshot",
 };

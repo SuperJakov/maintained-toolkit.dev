@@ -8,6 +8,7 @@ import { anthropicModels } from "./anthropic";
 import { llamaModels } from "./llama";
 import { qwenModels } from "./qwen";
 import { deepseekModels } from "./deepseek";
+import { moonshotModels } from "./moonshot";
 
 export const allLanguageModels = [
   ...anthropicModels,
@@ -18,6 +19,7 @@ export const allLanguageModels = [
   ...llamaModels,
   ...qwenModels,
   ...deepseekModels,
+  ...moonshotModels,
 ];
 
 export const allImageModels = [...openAiImageModels, ...xaiImageModels];

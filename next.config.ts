@@ -3,9 +3,9 @@
  * for Docker builds.
  */
 import "./src/env.js";
+import { type NextConfig } from "next";
 
-/** @type {import("next").NextConfig} */
-const config = {
+const config: NextConfig = {
   images: {
     remotePatterns: [
       {
@@ -13,6 +13,9 @@ const config = {
         hostname: "3kjwme0xuhfnyrkn.public.blob.vercel-storage.com",
       },
     ],
+  },
+  experimental: {
+    reactCompiler: true,
   },
 };
 
