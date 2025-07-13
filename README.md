@@ -2,6 +2,15 @@
 
 ![Banner Image](/banner.png)
 
+> **About this fork**  
+> This repository is an actively-maintained fork of the original Toolkit.dev.  
+> Our goals:  
+> • Remove deprecated LLM models  
+> • Integrate newer, faster models  
+> • Modernize the UI/UX  
+> • Improve performance and reliability throughout the stack  
+> If you’re looking for the legacy project, visit the upstream repo; if you want the latest and most stable experience, stay here!
+
 An extensible AI chat application with Generative UI built for the **T3 Cloneathon** using the [T3 Stack](https://create.t3.gg/). Toolkit.dev features a powerful toolkit system that allow users to toggle sets of AI tools to interact with external services, search the web, manage files, and much more.
 
 Every Toolkit includes customizable UI components, enabling rich, interactive, and visually engaging displays for all tool outputs and interactions.
