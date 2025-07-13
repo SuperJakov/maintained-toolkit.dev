@@ -6,41 +6,38 @@ import {
 
 const xaiLanguageModelData: Omit<LanguageModel, "provider">[] = [
   {
+    name: "Grok 4",
+    modelId: "grok-4",
+    bestFor: ["Programming", "Complex math", "Reasoning"],
+    capabilities: [
+      LanguageModelCapability.Reasoning,
+      LanguageModelCapability.ToolCalling,
+      LanguageModelCapability.Vision,
+    ],
+    isNew: true,
+    contextLength: 250_000,
+    description:
+      "Grok 4 is xAI's most powerful model to date, featuring multimodal understanding and a massive context window. Grok 4 is known to reason more than other reasoning models which improves its answers.",
+  },
+  {
     name: "Grok 3",
-    modelId: "grok-3-beta",
-    description: "Latest generation Grok model with enhanced capabilities",
+    modelId: "grok-3",
+    description:
+      "Grok 3 is xAI's flagship large language model built for advanced reasoning, creativity, and real-time knowledge integration.",
     capabilities: [LanguageModelCapability.ToolCalling],
     bestFor: ["General purpose", "Real-time information", "Analysis"],
     contextLength: 128000,
   },
   {
     name: "Grok 3 Mini",
-    modelId: "grok-3-mini-beta",
-    description: "Compact version for efficient processing",
+    modelId: "grok-3-mini",
+    description:
+      "Grok 3 Mini is a compact version of Grok 3, optimized for speed and efficiency with reduced computational requirements.",
     capabilities: [
       LanguageModelCapability.ToolCalling,
       LanguageModelCapability.Reasoning,
     ],
     bestFor: ["Cost-effective", "Simple queries", "Quick tasks"],
-    contextLength: 128000,
-  },
-  {
-    name: "Grok 2",
-    modelId: "grok-2-1212",
-    description: "Advanced conversational AI with real-time knowledge",
-    capabilities: [LanguageModelCapability.ToolCalling],
-    bestFor: ["Conversations", "Real-time info", "General purpose"],
-    contextLength: 128000,
-  },
-  {
-    name: "Grok 2 Vision",
-    modelId: "grok-2-vision-1212",
-    description: "Grok 2 with image understanding capabilities",
-    capabilities: [
-      LanguageModelCapability.Vision,
-      LanguageModelCapability.ToolCalling,
-    ],
-    bestFor: ["Image analysis", "Multimodal tasks", "Visual content"],
     contextLength: 128000,
   },
 ];

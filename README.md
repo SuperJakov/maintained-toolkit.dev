@@ -1,4 +1,4 @@
-# [Toolkit.dev](https://toolkit.dev)
+# Toolkit.dev
 
 ![Banner Image](/banner.png)
 
@@ -64,7 +64,7 @@ Toolkit.dev's toolkit architecture allows AI assistants to use powerful tools:
 
 - **OpenAI**
 - **Anthropic**
-- **XAI**
+- **xAI**
 - **Google**
 - **Perplexity**
 
